@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <Navbar />
       <div  style={{display:"flex "}}>
-       <div>
+       <div style={{textAlign:"left "}}>
        <CountriesList allCountries={allCountries}/>
        </div>
-        <div clasName="details">
+        <div className="details" style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
                
         <Routes>
 

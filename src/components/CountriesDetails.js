@@ -13,7 +13,7 @@ function CountriesDetails({ allCountries }) {
       <div>
         <img
           src={`https://flagpedia.net/data/flags/icon/72x54/${countrySelected.alpha2Code.toLowerCase()}.png`}
-          alt="Flag"
+          alt="Flag" 
         />
         <table>
           <thead></thead>
@@ -35,7 +35,7 @@ function CountriesDetails({ allCountries }) {
                 <ul>
                   {countrySelected.borders.map((border) => {
                     return (
-                      <li Key={border}>
+                      <li key={border}>
                         <Link to={`/${border}`}>{border}</Link>
                       </li>
                     );
