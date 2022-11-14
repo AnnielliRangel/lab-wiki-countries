@@ -8,7 +8,7 @@ function CountriesList({ allCountries }) {
         return (
             <div key={country.alpha3Code}>
 
-                 <Link to={`/country/${country.alpha3Code}`}> {country.name.common} </Link>
+                 <Link to={`/${country.alpha3Code}`}> {country.name.common} </Link>
             </div>
         );
       })}

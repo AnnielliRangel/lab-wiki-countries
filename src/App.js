@@ -15,10 +15,20 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div ClassName= "paises" >
-        <CountriesList allCountries={allCountries}/>
+      <div  style={{display:"flex "}}>
+       <div>
+       <CountriesList allCountries={allCountries}/>
+       </div>
+        <div clasName="details">
+               
+        <Routes>
+
+        <Route path="/:countryId" element={ <CountriesDetails allCountries = {allCountries} /> } />
+
+        </Routes>
+
+        </div>
         
-        <CountriesDetails allCountries = {allCountries} />
 
       </div>
 
